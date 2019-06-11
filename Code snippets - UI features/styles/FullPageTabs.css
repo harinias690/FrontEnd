@@ -1,0 +1,35 @@
+
+
+body,html{
+    margin:0;
+    height:100%;
+}
+.tabLink{
+    width:25%;
+    padding:17px;
+    margin:0;
+    float:left;
+    background-color:#eee;
+    border:none;
+    font-size:17px;
+    outline:0;
+}
+
+.tabLink:hover{
+    background-color:#bbb;
+}
+
+.tabContent{
+    padding:100px 20px;
+    border-top:none;
+    height:100%;
+    color:white;
+    
+}
+
+#Home{background-color:blue;}
+#News{background-color:green;}
+#Contact{background-color:orange;}
+#About{background-color:purple;}
+
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Topics</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles/tabs.css" type="text/css">
+    </head>
+    <body>
+        <!-- Tab links-->
+        <div class="tablink-container">
+        <div><button class="tabLinks" onclick="displayContent(event,'London')">London</button></div>
+        <div><button class="tabLinks" onclick="displayContent(event,'Paris')">Paris</button></div>
+        <div><button class="tabLinks" onclick="displayContent(event,'Tokyo')">Tokyo</button></div>
+            </div>
+        
+        <!--tab contents -->
+        <div class="tabContent" id="London">
+            <h2>London</h2>
+            <p>dshdjsfh dslfdsf slfsdlf sljfsdf slfhlsidf</p>
+        </div>
+         <div class="tabContent" id="Paris">
+            <h2>Paris</h2>
+            <p>dshdjsfh dslfdsf slfsdlf sljfsdf slfhlsidf</p>
+        </div>
+         <div class="tabContent" id="Tokyo">
+            <h2>Tokyo</h2>
+            <p>dshdjsfh dslfdsf slfsdlf sljfsdf slfhlsidf</p>
+        </div>
+        
+        
+        <script>
+            var tabs;
+            tabs = document.getElementsByClassName('tabContent');
+            for(i=0;i<tabs.length;i++){
+                tabs[i].style.display="none";
+            }
+            function displayContent(event,tabName){
+                
+                var tc,tl;
+                tc=document.getElementsByClassName('tabContent');
+                for(i=0;i<tc.length;i++){
+                    tc[i].style.display="none";
+                }
+                tl=document.getElementsByClassName('tabLinks');
+                for(i=0;i<tl.length;i++){
+                    tl[i].className=tl[i].className.replace(" active","");
+                }
+                document.getElementById(tabName).style.display="block";
+                event.currentTarget.className += ' active';
+                
+            }
+           
+        </script>
+    </body>
+</html>

@@ -1,0 +1,136 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+.main-nav{
+    position:fixed;
+    width:100%;
+    background:rgb(0,0,0,0.5);
+    overflow:auto;
+    z-index:2;
+}
+
+p#demo{
+    width:20%;
+    padding:12px 20px;
+    color:white;
+    font-size:30px;
+    font-family: 'Fredericka the Great', cursive;
+    float:left;
+    background:inherit;
+}
+
+#main-menu{
+    width:80%;
+    padding:20px;
+    text-align:center;
+    float:right;
+    background:inherit;
+}
+
+#main-menu a{
+   width:20%;
+    padding:10px;
+    text-decoration:none;
+    font-size:15px;
+    color:white;
+    text-transform: uppercase;
+    font-family: 'Rancho', cursive;
+    margin-right:40px;
+    font-weight:bold;
+}
+
+#main-menu a:hover, #main-menu a.current{
+    background:rgb(255,255,255,0.6);
+    color:black;
+    //font-size:17px;
+    padding:10px 20px;
+    border-radius:40%;
+    
+}
+
+.slide{
+    overflow:hidden;
+    animation:fade 0.4s ease-in;
+    
+}
+
+.slide-img{
+    min-width:100%;
+    height:100vh;
+    animation:fade 0.4s ease-in;
+}
+
+.slide-txt{
+    text-align: center;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size:40px;
+    background:rgb(0,0,0,0.9);
+    font-family:'Bad Script';
+    border:none;
+    padding:30px;
+    border-radius:40px;
+    color:white;
+    font-weight:bold;
+    animation:fade 0.4s ease-in;
+}
+
+@keyframes fade{
+    0%{left:0;}
+    100%{left:45%;}
+    
+}
+
+@media screen and (max-width:1200px){
+    p#demo{
+        width:46%;
+    }
+    #main-menu{
+        width:54%;
+        padding:20px 0;
+    }
+    #main-menu a{
+        width:12%;
+        font-size:14px;
+        padding:20px 0;
+        margin:20px;
+    }
+    
+    .slide-txt{
+        font-size:30px;
+    }
+    
+}
+
+
+@media screen and (max-width:720px){
+    
+    p#demo,#main-menu a,#main-menu{
+        display:block;
+        width:100%;
+        text-align:center;
+        margin:0;
+        padding:20px;
+    }
+    
+    #main-menu{
+        padding:0;
+    }
+    
+    .slide-txt{
+        font-size:22px;
+        top:70%;
+        left:50%;
+        width:80%;
+    }
+    
+}
+
+
+
+

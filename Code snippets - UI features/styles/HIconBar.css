@@ -1,0 +1,38 @@
+body{
+    margin:0;
+}
+
+#h-icon-bar{
+    width:100%;
+    background-color:purple;
+   // overflow:auto;
+}
+
+#h-icon-bar a{
+    font-size:40px;
+    color:white;
+    width:20%;
+    float:left;
+    padding:20px 0;
+    text-align:center;
+}
+
+#h-icon-bar a.current{
+    background:green;
+}
+
+#h-icon-bar a:hover{
+    background: black;
+    
+}
+
+.clearfix::after{
+    content:'';
+    clear:both;
+    display:table;
+}
+    
+
+
+    
+

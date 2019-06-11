@@ -1,0 +1,110 @@
+
+
+
+body{
+    margin:0;
+    padding:0;
+    font-family:monospace;
+    background:crimson;
+}
+
+header{
+    background-color:black;
+}
+
+header nav ul{
+    margin-top:24px;
+    list-style:none;
+    float:right;
+    
+}
+
+nav li{
+    display:inline;
+}
+
+a.current{
+    color:#EC2B40;
+}
+
+nav li a{
+    color:#FFD169;
+    text-decoration:none;
+    padding:15px;
+    font-size:20px;
+    text-transform:uppercase;
+     
+    
+}
+
+div#owner-name{
+    float:left;
+    color:white;
+    padding:0 0 0 60px;
+    margin:0;
+}
+
+#ninja{
+    margin:0;
+    font-size:100px;
+    font-family:jokerman;
+    color:#2E0333;
+    animation-name:move;
+    animation-duration:3s;
+    animation-iteration-count:30;
+    animation-direction:normal;
+    animation-timing-function:ease-in-out;
+    position:relative;
+    animation-fill-mode: both;
+}
+@keyframes move{
+    0%{top:0px;color:#000;}
+    50%{top:100px;color:#2E0333;}
+    100%{top:200px;color:greenyellow;}
+    
+    
+    
+}
+
+header::after{
+    content:"";
+    clear:both;
+    display:block;
+}
+
+#section1{
+    margin-top:200px;
+    text-align:center;
+}
+
+#fname{
+    
+    margin:0;
+    font-size:120px;
+    
+    text-shadow:-2px -2px rebeccapurple;
+    font-weight:bold;
+    
+    border-bottom:2px solid #EC2B40;
+    display:inline;
+}
+
+#description{
+    color:#FFD169;
+    font-size:30px;
+    margin:0;
+    padding-top:22px;
+}
+
+#ch{
+   color:plum; 
+   transition:color 0.2s linear; 
+}
+
+#ch:hover{
+    color:#EC2B40;
+}
+
+
+
+

@@ -1,0 +1,45 @@
+.name{
+    font-size:24px;
+    font-family:cursive;
+}
+
+
+.denom{
+    width:600px;
+    height:20px;
+    background-color:#ccc;
+    border-radius:10px;
+}
+
+.num{
+    
+    height:20px;
+    overflow:auto;
+    border-radius:10px;
+}
+
+#html{
+    width:480px;
+    background-color:teal;
+}
+
+#css{
+    width:360px;
+    background-color:teal;
+}
+
+#js{
+    width:540px;
+    background-color:teal;
+}
+
+.num p{
+    float:right;
+    margin:0;
+    color:white;
+    padding-right:20px;
+    font-size:17px;
+}
+
+
+

@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <h1>Demo for displaying a loading image on button click</h1>
+
+    <div id="loading" style="display:none;">
+      <center>
+        <img src="https://media.giphy.com/media/xTkcEQACH24SMPxIQg/giphy.gif" height="400" width="400">
+        <br>
+        <strong>Loading please wait...</strong>
+        <br>
+        <br>
+      </center>
+    </div>
+
+    <button name="button1" onclick="$('#loading').show();">
+      Click me to display loading image!
+    </button>
+  </body>
+</html>

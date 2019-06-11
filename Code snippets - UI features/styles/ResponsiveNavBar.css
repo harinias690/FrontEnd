@@ -1,0 +1,49 @@
+body{
+    margin:0;
+    
+}
+
+#resNav{
+    background:#333;
+    margin:0;
+    overflow:hidden;
+}
+
+#resNav a{
+    text-decoration: none;
+    color:white;
+    display:block;
+    padding:10px 10px;
+    display:none;
+    text-align:center;
+}
+
+#resNav .main-item{
+    float:left;
+    background-color:green;
+    display:block;
+    width:20%;
+}
+
+#resNav .icon{
+    float:right;
+    display:block;
+    width:10%;
+}
+
+#resNav .main-item:hover{
+    background-color:#777;
+}
+
+#resNav a:hover{
+    background-color:#777;
+}
+.active::after{
+    content:"";
+    clear:both;
+    display:block;
+}
+
+#resNav div.open a{
+    display:block;
+}

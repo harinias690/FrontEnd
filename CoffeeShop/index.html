@@ -1,0 +1,71 @@
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>Coffee Shop | Welcome</title>
+            <meta name="viewport" content="width=device-width,initial-scale=1.0">
+            <link rel="shortcut icon" href="images/favicon.ico">
+            <link rel="stylesheet" type="text/css" href="styles/style.css">
+            <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Monoton|Bad+Script" rel="stylesheet">
+            <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css' integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/' crossorigin='anonymous'>
+            
+        </head>
+        <body>
+            <div class="wrapper">
+                <div class="main-nav">
+                    <p id="demo">Coffee Shop</p>
+                    <nav id="main-menu">
+                        <a href="#">Home</a>
+                        <a href="menu.html">Menu</a>
+                        <a href="about.html">About Us</a>
+                        <a href="jobs.html">Jobs</a>
+                    </nav>
+                </div>
+                <div id="slider">
+                    <div class="slide">
+                        <img src="images/1.jpg" class="slide-img">
+                        <p class="slide-txt">You can't buy happiness but you can buy coffee and that's pretty close.</p>
+                    </div>
+                     <div class="slide">
+                        <img src="images/2.jpg" class="slide-img">
+                         <p class="slide-txt">Coffee is always a good idea</p>
+                    </div>
+                     <div class="slide">
+                        <img src="images/3.jpg" class="slide-img">
+                         <p class="slide-txt">Life happens. Coffee helps.</p>
+                    </div>
+                     <div class="slide">
+                        <img src="images/4.jpg" class="slide-img">
+                         <p class="slide-txt">Make things happen</p>
+                    </div>
+                     <div class="slide">
+                        <img src="images/5.jpg" class="slide-img">
+                         <p class="slide-txt">A cup of coffee shared with a friend is happiness tasted and time well spent.</p>
+                    </div>
+                    
+                </div>
+            
+            </div>
+            <script>
+                var imgs = document.getElementsByClassName("slide-img");
+                var txts = document.getElementsByClassName("slide-txt");
+                var i;
+                var currentSlide = 0;
+                
+                function showSlide(){
+                    for(i=0;i<5;i++){
+                        imgs[i].style.display="none";
+                        txts[i].style.display="none";
+                        
+                    }
+                    if(currentSlide>=imgs.length){
+                        currentSlide=0;
+                    }
+                    imgs[currentSlide].style.display="block";
+                    txts[currentSlide].style.display="block";
+                    currentSlide++;
+                    setTimeout(showSlide,10000);
+                    }
+                showSlide();
+            </script>
+        </body>
+    </html>

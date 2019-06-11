@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+
+#h-icon-bar{
+    
+   
+}
+
+#h-icon-bar ul{
+    background:red;
+    display:flex;
+    list-style: none;
+    
+    margin:0;
+    padding:0;
+}
+
+#h-icon-bar li {
+    flex-grow:1;
+    flex-basis:200px;
+     
+    
+}
+
+#h-icon-bar a{
+    display:block;
+    text-align:center;
+    padding:40px;
+    background-color:gray;
+}
+
+#h-icon-bar a:hover{
+    background:#000;
+}

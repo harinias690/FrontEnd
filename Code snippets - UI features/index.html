@@ -1,0 +1,78 @@
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>Topics</title>
+            <meta name="viewport" content="width=device-width,initial-scale=1.0">
+            <link rel="shortcut icon" href="images/favicon.ico">
+            <link rel="stylesheet" type="text/css" href="styles/style.css">
+            <link href="https://fonts.googleapis.com/css?family=Asap|Bad+Script|Courgette|Roboto|Vollkorn" rel="stylesheet">
+            <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css' integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/' crossorigin='anonymous'>
+        </head>
+        <body>
+            <div class="topics">
+                <div class="topic">
+                    <div class="topic-name" onclick="update(this)">
+                        <a href="FlexIconBar.html">Flex Icon Bar</a>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="topic-desc">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque efficitur placerat tellus vel cursus.</p>
+                    </div>
+                </div>
+                <div class="topic">
+                    <div class="topic-name" onclick="update(this)">
+                        <a href="HIconBar.html">Horizontal Icon Bar</a>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="topic-desc">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque efficitur placerat tellus vel cursus.</p>
+                    </div>
+                </div>
+                <div class="topic">
+                    <div class="topic-name" onclick="update(this)">
+                        <a href="VIconBar.html">Vertical Icon Bar</a>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="topic-desc">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque efficitur placerat tellus vel cursus. Curabitur sed viverra turpis, non accumsan justo.</p>
+                    </div>
+                </div>
+                <div class="topic">
+                    <div class="topic-name" onclick="update(this)">
+                        <a href="MenuIcon.html">Menu Icon Bar</a>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="topic-desc">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque efficitur placerat tellus vel cursus. </p>
+                    </div>
+                </div>
+                <div class="topic">
+                    <div class="topic-name" onclick="update(this)">
+                        <a href="Accordion.html">Accordion</a>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="topic-desc">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque efficitur placerat tellus vel cursus. </p>
+                    </div>
+                </div>
+                <div class="topic">
+                    <div class="topic-name" onclick="update(this)">
+                        <a href="tabs.html">Tabs</a>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="topic-desc">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque efficitur placerat tellus vel cursus. </p>
+                    </div>
+                </div>
+            </div>
+            <script>
+                function update(x){
+                    x.lastElementChild.classList.toggle("fa-plus");
+                    x.lastElementChild.classList.toggle("fa-minus");
+                    x.nextElementSibling.classList.toggle("show");
+                    x.classList.toggle("active");
+                }
+            
+            </script>
+        </body>
+    </html>

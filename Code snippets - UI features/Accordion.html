@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Topics</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles/Accordion.css" type="text/css">
+    </head>
+    <body>
+        <div class="item-container">
+            <div class="item">
+                <div class="sec" onclick="update(this)">  
+                    <p>Section1</p><i class="fa fa-plus-circle"></i>
+                </div>
+                <div class="sec-desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="sec" onclick="update(this)">  
+                    <p>Section2</p><i class="fa fa-plus-circle"></i>
+                </div>
+                <div class="sec-desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="sec" onclick="update(this)">  
+                    <p>Section3</p><i class="fa fa-plus-circle"></i>
+                </div>
+                <div class="sec-desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+        
+        </div>
+        
+       
+        <script>
+            function update(x){
+               x.nextElementSibling.classList.toggle("show");
+               x.lastElementChild.classList.toggle("fa-plus-circle"); 
+                x.lastElementChild.classList.toggle("fa-minus-circle"); 
+                x.classList.toggle("active"); 
+            }
+            
+        </script>
+    </body>
+</html>

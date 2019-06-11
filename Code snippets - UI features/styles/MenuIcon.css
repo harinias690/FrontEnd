@@ -1,0 +1,28 @@
+div#menu-icon{
+    display:inline-block;
+    margin-top:20px;
+    cursor:pointer;
+}
+
+div#menu-icon:hover{
+    margin-top:20px;
+    cursor:pointer;
+    background:purple;
+}
+div.menu-line{
+    width:36px;
+    height:5px;
+    margin:6px 0;
+    background:black;
+}
+.change .one{
+    transform:rotate(45deg) translate(9px,5px);
+}
+
+.change .two{
+    opacity:0;
+}
+
+.change .three{
+    transform:rotate(-45deg) translate(9px,-9px);
+}

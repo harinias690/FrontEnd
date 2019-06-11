@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Template | Welcome</title>
+            <meta name="viewport" content="width=device-width,initial-scale=1.0">
+            <link rel="shortcut icon" href="images/favicon.ico">
+            <link rel="stylesheet" type="text/css" href="styles/style.css">
+            <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+            <style>
+                *{
+                    margin:0;
+                    padding:0;
+                    box-sizing: border-box;
+                }
+                body{
+                    background:#F6F6F6;
+                    font-family: 'Roboto', sans-serif;
+
+                }
+                .container{
+                    width:90%;
+                  //  background:#fff;
+                    margin:auto;
+                    padding:20px 0;
+                    background:#7FA0C5;//#eee;//rgb(0,178,157);
+                }
+                #sub-menu{
+                    display:flex;
+                    justify-content: space-between;
+                    width:75%;
+                    margin:20px auto;
+                    flex-wrap:wrap;
+                    
+                }
+                .proj-name{
+                    width:180px;
+                    height:110px;
+                    background:linear-gradient(90deg,transparent 50%,black 50%);
+                    background-size:360px 60px;
+                    border:5px solid #eee;
+                    padding:10px;
+                    text-align: center;
+                    border-radius:20px;
+                    margin-bottom:10px;
+                    transition:all 1s;
+                   // box-shadow: 4px 4px rgb(0,178,157);
+                   // transform: skewX(-10deg);
+                    
+                }
+                
+                .proj-name:hover{
+                    background-position:180px 0;
+                    color:white;
+                    cursor:pointer;
+                }
+                .active{
+                    border:5px solid blue;
+                    background:blue;
+                    color:white;
+                    box-shadow: 2px 2px 5px blue;
+                }
+                
+                .proj-res{
+                    //border:2px solid black;
+                    overflow:hidden;
+                    width:80%;
+                    margin:20px auto;
+                    background:#eee;
+                }
+                
+                .proj{
+                    padding:10px;
+                  //  border-bottom: 1px groove rgb(0,0,0,0.4);
+                }
+                .proj h2{
+                    padding:10px 20px;
+                    border-bottom:1px solid grey;
+                }
+                .proj p{
+                    padding:10px 20px;
+                    
+                }
+                .res{
+                  padding:10px;
+                }
+                
+                .res h2{
+                    padding:0 20px;
+                }
+                .res ul {
+                    margin:10px 0;
+                    list-style: none; 
+                    padding:0 20px;
+                    //background:white;
+                }
+                
+                .res ul li{
+                   // margin:0 50px;
+                    border-top:1px solid grey;
+                    padding:10px 0;
+                }
+
+              /*  .res ul li::before {
+                    content: "\2022";  
+                    color:rgb(0,178,157); 
+                    font-weight: bolder; 
+                    font-size: 1.2em;
+                    display: inline-block; 
+                    width: 1em; 
+                    margin-left: -1em; 
+                }*/
+
+                
+                
+            
+            </style>
+        </head>
+        <body>
+            <div class="container">
+            <div id="sub-menu">
+                <div class="proj-name active"><h3>UBS</h3><p>QA Analyst</p><p>Jul 2015 to Jan 2017</p><p>Credit Risk</p></div>
+                
+                <div class="proj-name"><h3>Westpac</h3><p>QA Analyst</p><p>Jul 2015 to Jan 2017</p><p>BTFG Asgard</p></div>
+                
+                <div class="proj-name"><h3>Westpac</h3><p>QA Engineer</p><p>Jul 2015 to Jan 2017</p><p>TDM</p></div>
+                
+                <div class="proj-name"><h3>Westpac</h3><p>QA Enginner</p><p>Jul 2015 to Jan 2017</p><p>GCM</p></div>
+                
+                <div class="proj-name"><h3>Westpac</h3><p>QA Engineer</p><p>Jul 2015 to Jan 2017</p><p>Infolease</p></div>
+            
+            </div>
+            <div class="proj-res">
+                <div class="proj">
+                <h2>Description:</h2>
+                <p>UBS is a Swiss global financial services company. The company provides wealth management, asset management, and investment banking services for private, corporate, and institutional clients worldwide.  
+ZEUS is a central database of UBS which provides single view of Wealth Management credit risk data to credit officers, risk control and reporting users. It is an Oracle and Java based application that collates, processes, and de-normalizes credit risk information between different up-streams and down-streams through jobs and calculators and reports are run for all business days and month-ends.
+</p></div>
+                <div class="res">
+                <h2>Responsibilities</h2>
+                <ul>
+                    <li>Planned and organized knowledge transfer from client to offshore team.
+                    </li>
+                    <li>Reviewed and analyzed the project requirements and obtained resolutions to the queries from business analyst.
+                    </li>
+                    <li>Designed the test strategy in line with the scope and organization standards</li>
+<li>Prepared test plan, got it reviewed and signed-off by the relevant stakeholders</li> 
+<li>Estimated the test effort and created the test schedule</li>
+<li>Participated in sprint planning and daily scrum and provided status; Escalated and obtained resolution to the blockers.</li>  
+<li>Automated testing of calculators such as Collateral allocation, Exposure at default, financial ratios, Behavioral ratios, Corporate rating using Selenium element locator techniques (id, className, name, linkText, cssSelector, xpath etc.,), WebDriver methods, Java programming, parameterization, and exception handling.</li>
+<li>Used Selenium WebDriver to handle various web page controls like text-box, button, drop-down, check-box, radio button, labels using X Path and other locators.</li>
+<li>Created reusable test automation resources such as function libraries that improved execution time and productivity.</li>
+<li>Created, scheduled, executed and maintained test scripts and test results using page object model (POM), TestNG, Maven, and GIT.</li>
+<li>Wrote complex SQL queries using joins, Sub queries, and Correlated queries to check integrity of the data uploaded into database after the loader and controller jobs were run.</li> 
+<li>Wrote complex SQL queries to calculate the expected results based on business rules and verified the results stored in database tables</li>
+<li>Executed UNIX scripts (jobs) in putty and managed job logs and shared error logs with development team for defect analysis.</li>
+<li>Reviewed the test cases and test data generated by the offshore team and got them to address the reviewed comments</li>
+<li>Administered the project in the test management tool, HP Quality center (QC/ALM).</li>
+<li>Received updates on latest releases and builds from the development team and client.</li>
+<li>Assigned tasks to offshore team based on the test plan and checked the status of each assigned task on daily basis.</li>
+<li>Reviewed defect reports and assigned valid defects to the relevant developer.</li>
+<li>Assigned resolved defects to the concerned tester and ensured the defects are re-tested and closed accordingly.</li>
+<li>Ensured test plan, and test automation suite were updated, as required.</li>
+<li>Tracked and reported consolidated test status to the manager and offshore counterpart.</li>
+                    <li>Responsible for preparing Test Completion Reports and Weekly Status Reports for the projects/change requests in progress.</li>
+
+
+
+                </ul>
+</div>
+            </div>
+</div>
+        </body>
+    </html>

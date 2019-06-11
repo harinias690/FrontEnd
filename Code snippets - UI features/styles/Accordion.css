@@ -1,0 +1,41 @@
+body{
+    margin:0 auto;
+    width:70%;
+}
+
+.item-container{
+    border:2px solid gray;
+}
+
+.sec{
+    background:#ccc;
+    overflow:auto;
+    padding:10px;
+}
+
+.sec p{
+    float:left;
+    margin:0;
+    
+}
+.sec i{
+    float:right;
+}
+
+.sec:hover, div.active{
+    background:gray;
+    overflow:auto;
+    padding:10px;
+    cursor:pointer;
+}
+
+.sec-desc{
+    padding:0 10px;
+    max-height:0;
+    overflow:hidden;
+    transition:max-height 0.2s ease-in;
+}
+
+.show{
+    max-height:100px;
+}

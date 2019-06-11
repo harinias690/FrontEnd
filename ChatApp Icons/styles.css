@@ -1,0 +1,44 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#main-left-panel{
+    width: 22%;
+    min-width: 250px;
+  
+}
+header{
+    
+    
+}
+
+ul#main-nav{
+    list-style-type: none;
+}
+
+li.main-nav-item{
+    float: right;
+    margin: 10px;
+}
+
+li.main-nav-item:first-child{
+    float: left;
+}
+
+ul#sub-menu{
+    display: none;
+}
+
+div.header-wrapper::after{
+    content:"";
+    clear: both;
+    display: block;
+}
+
+section#main-left-panel{
+    height: 100%;
+    min-width: 250px;
+    border-right-color: darkgray;
+    border-right-style: solid;
+}

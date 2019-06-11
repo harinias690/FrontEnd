@@ -1,0 +1,156 @@
+body{
+    font:20px/1.5 Arial,Helvetica,Sans-serif;
+    background-color:#f4f4f4;
+    
+    
+}
+*{
+    padding:0;
+    margin:0;
+}
+
+
+/* Header */
+div.container{
+    width:80%;
+    margin:auto;
+}
+
+header{
+    background-color:#35424a;
+    color: #fff;
+    border-bottom:3px solid #e8491d;
+    min-height:130px;
+}
+
+header h1{
+    float:left;
+    margin-top:40px;
+}
+
+header nav ul{
+    margin-top:58px;
+    float:right;
+    list-style:none;
+}
+
+header nav li{
+    display:inline;
+    padding-right:35px;
+}
+
+header a{
+    color:#fff;
+    text-decoration:none;
+    text-transform:uppercase;
+}
+
+header .highlight, header .current{
+    color:#e8491d;
+}
+
+/* Showcase*/
+
+#showcase{
+    background:url("../images/showcase.jpg") no-repeat 0 -120px;
+    min-height:430px;
+    color:#fff;
+    text-align:center;
+}
+
+#showcase h1{
+    font-size:65px;
+    padding-top:120px;
+}
+
+/* Newsletter */
+
+#newsletter{
+    background-color:#35424a;
+    color:#fff;
+    min-height:130px
+}
+
+#newsletter h1{
+    margin-top:40px;
+    float:left;
+}
+
+#newsletter ul{
+    list-style:none;
+    float:right;
+}
+#newsletter li{
+    display:inline;
+}
+
+
+#newsletter input{
+    margin-top:35px;
+    padding:15px;
+    width:250px;
+}
+
+.button_1{
+    background-color:#e8491d;
+    color:#fff;
+    padding:15px;
+    border:none;
+}
+
+#boxes{
+    margin-top:40px;
+    height:620px;
+}
+
+#boxes .box{
+    width:30%;
+    float:left;
+    padding-right:3.3%;
+    text-align:center;
+        
+        
+}
+
+.box img{
+    height:200px;
+}
+
+.box h3{
+    margin:20px 0;
+}
+
+footer{
+    background-color:#e8491d;
+    color:#fff;
+    text-align:center;
+    height:120px;
+}
+
+footer p{
+    padding-top:50px;
+    text-align:center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+
+.tablink-container {
+    overflow:hidden;
+    background-color:#ddd;
+}
+.tabLinks{
+    display:inline-block;
+    float:left;
+    padding:15px;
+    border:none;
+    font-size:1.2em;
+    transition: 0.2s;
+}
+
+.tabLinks:hover{
+    background-color:#777;
+}
+
+.tabContent{
+    border:1px solid #ccc;
+    padding:10px;
+    border-top:none;
+    
+}
+
+.active{
+    background-color:#555;
+    color:white;
+}
+
+.tabContent{
+    animation:fadeEffect 3s;
+}
+
+@keyframes fadeEffect{
+    from{opacity:0;}
+    to{opacity:1;}
+}

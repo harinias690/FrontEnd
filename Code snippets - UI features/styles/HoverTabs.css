@@ -1,0 +1,46 @@
+*{
+    box-sizing:border-box;
+}
+body,html{
+    margin:0;
+    height:100%;
+    
+}
+
+.tabLinks{
+    width:25%;
+    float:left;
+    height:100%;
+    background-color:#ccc;
+    border:1px solid #888;
+    border-bottom:none;
+    
+}
+
+.tabLink{
+    display:block;
+    width:100%;
+    padding:15px 12px;
+    background-color:inherit;
+    border:none;
+    font-size:1.2em;
+}
+.tabLink:hover{
+    background:#555;
+    color:white;
+}
+.tabContent{
+    height:100%;
+    padding:100px;
+    float:left;
+    width:75%;
+    border:none;
+    display:none;
+}
+
+.active{
+    background-color: #aaa;
+}
+
+
+

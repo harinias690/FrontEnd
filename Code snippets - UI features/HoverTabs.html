@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Topics</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles/HoverTabs.css" type="text/css">
+    </head>
+    <body>
+        <!-- Tab links-->
+        <div class="tabLinks">
+            <button class="tabLink Home" onmouseover="displayContent(event,'Home')">Home</button>
+            <button class="tabLink" onmouseover="displayContent(event,'News')">News</button>
+            <button class="tabLink" onmouseover="displayContent(event,'Contact')">Contact</button>
+            <button class="tabLink" onmouseover="displayContent(event,'About')">About</button>
+        </div>
+        
+        <!--tab contents -->
+        <div class="tabContent" id="Home">
+            <h2>Home</h2>
+            <p>dshdjsfh dslfdsf slfsdlf sljfsdf slfhlsidf</p>
+        </div>
+         <div class="tabContent" id="News">
+            <h2>News</h2>
+            <p>dshdjsfh dslfdsf slfsdlf sljfsdf slfhlsidf</p>
+        </div>
+         <div class="tabContent" id="Contact">
+            <h2>Contact</h2>
+            <p>dshdjsfh dslfdsf slfsdlf sljfsdf slfhlsidf</p>
+        </div>
+        <div class="tabContent" id="About">
+            <h2>About</h2>
+            <p>dshdjsfh dslfdsf slfsdlf sljfsdf slfhlsidf</p>
+        </div>
+        <!-- Script -->
+        <script>
+            var tc,tl;
+            
+            function displayContent(event,tabName){
+                tc=document.getElementsByClassName("tabContent");
+            for(i=0;i<tc.length;i++){
+                tc[i].style.display="none";
+            }
+                tl=document.getElementsByClassName("tabLink");
+            for(i=0;i<tl.length;i++){
+                tl[i].className = tl[i].className.replace(" active","");
+            }
+                event.currentTarget.className +=" active";
+                document.getElementById(tabName).style.display="block";
+            }
+            
+        
+        
+        
+        </script>
+        
+        
+    </body>
+</html>
